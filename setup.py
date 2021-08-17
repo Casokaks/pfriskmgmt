@@ -9,34 +9,28 @@ Created on: Aug 15th 2021
 
 from setuptools import setup
 
-#import os
-#key = os.environ['GITHUB_TOKEN']
-
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='projectname',
+    name='pfriskmgmt',
     version='0.0.1',
     author='Casokaks',
     author_email='casokaks@gmail.com',
-    description='Light python template',
+    description='Financial portfolio risk management framework.',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/Casokaks/light-python-template',
+    url='https://github.com/Casokaks/pfriskmgmt',
     project_urls = {
-        "Bug Tracker": "https://github.com/Casokaks/light-python-template/issues"
+        "Bug Tracker": "https://github.com/Casokaks/pfriskmgmt/issues"
     },
     license='MIT',
-    packages=['projectname'],
+    packages=['pfriskmgmt'],
     install_requires=[
-        # Standard python packages:
-        #'pandas',
-        #'numpy',
-        # Public github repository:
-        #'<reponame> @ git+https://github.com/<username>/<reponame>@main',        
-        # Private github repository:
-        #'reponame @ git+https://{key}@github.com/username/reponame@main'.format(key=key),
+        'pandas', 
+        'numpy', 
+        'scipy', 
+        'statsmodels', 
     ],  
 )
 

@@ -1,13 +1,11 @@
-# pfriskmgmt
-
+"""
+pfriskmgmt
+==================================
 Financial portfolio risk management framework. 
-
-### Investment Management with Python and Machine Learning
-
 Code based on EDHEC Business School course Investment Management with Python and Machine Learning Specialization.
-
 https://www.coursera.org/specializations/investment-management-python-machine-learning
 
-### To install
+Author: Casokaks (https://github.com/Casokaks/)
+Created on: Aug 15th 2021
 
-pip install git+https://github.com/Casokaks/pfriskmgmt
+"""
