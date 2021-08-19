@@ -1,0 +1,4 @@
+# MANIFEST.in
+recursive-include pfriskmgmt *
+recursive-include pfriskmgmt/data *
+recursive-include pfriskmgmt/test *

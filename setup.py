@@ -1,20 +1,20 @@
 """
-Package setup
+pfriskmgmt setup
 ==================================
+Financial portfolio risk management framework. 
 
 Author: Casokaks (https://github.com/Casokaks/)
 Created on: Aug 15th 2021
 
 """
 
-from setuptools import setup
-
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+from setuptools import setup, find_packages
 setup(
     name='pfriskmgmt',
-    version='0.0.1',
+    version='0.1.1',
     author='Casokaks',
     author_email='casokaks@gmail.com',
     description='Financial portfolio risk management framework.',
@@ -25,7 +25,8 @@ setup(
         "Bug Tracker": "https://github.com/Casokaks/pfriskmgmt/issues"
     },
     license='MIT',
-    packages=['pfriskmgmt'],
+    packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         'pandas', 
         'numpy', 

@@ -2,7 +2,7 @@
 pfriskmgmt
 ==================================
 Financial portfolio risk management framework. 
-Code based on EDHEC Business School course Investment Management with Python and Machine Learning Specialization.
+Code based on EDHEC Business School specialization course 'Investment Management with Python and Machine Learning'.
 https://www.coursera.org/specializations/investment-management-python-machine-learning
 
 Author: Casokaks (https://github.com/Casokaks/)
@@ -10,8 +10,14 @@ Created on: Aug 15th 2021
 
 """
 
+
 import pandas as pd
 import numpy as np
+import statsmodels.api as sm
+import scipy.stats
+from scipy.stats import norm
+from scipy.optimize import minimize
+
 
 def get_ffme_returns():
     """
@@ -178,7 +184,6 @@ def sharpe_ratio(r, riskfree_rate, periods_per_year):
     return ann_ex_ret/ann_vol
 
 
-import scipy.stats
 def is_normal(r, level=0.01):
     """
     Applies the Jarque-Bera test to determine if a Series is normal or not
@@ -248,7 +253,6 @@ def cvar_historic(r, level=5):
         raise TypeError("Expected r to be a Series or DataFrame")
 
 
-from scipy.stats import norm
 def var_gaussian(r, level=5, modified=False):
     """
     Returns the Parametric Gauusian VaR of a Series or DataFrame
@@ -302,7 +306,6 @@ def plot_ef2(n_points, er, cov):
     return ef.plot.line(x="Volatility", y="Returns", style=".-")
 
 
-from scipy.optimize import minimize
 
 def minimize_vol(target_return, er, cov):
     """
@@ -529,7 +532,6 @@ def gbm(n_years = 10, n_scenarios=1000, mu=0.07, sigma=0.15, steps_per_year=12, 
     return ret_val
 
                          
-import statsmodels.api as sm
 def regress(dependent_variable, explanatory_variables, alpha=True):
     """
     Runs a linear regression to decompose the dependent variable into the explanatory variables
