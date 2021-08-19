@@ -14,3 +14,6 @@ Created on: Aug 15th 2021
 # Library version
 # -----------------------------------------------------------------------------------
 __version__ = "0.1.1"
+
+# import
+from . import pfriskmgmt
