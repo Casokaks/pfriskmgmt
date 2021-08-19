@@ -16,4 +16,5 @@ Created on: Aug 15th 2021
 __version__ = "0.1.1"
 
 # import
-from . import pfriskmgmt
+from .config import DATA_PATH
+from .pfriskmgmt import *
