@@ -17,7 +17,7 @@ import statsmodels.api as sm
 import scipy.stats
 from scipy.stats import norm
 from scipy.optimize import minimize
-from .config import DATA_PATH
+DATA_PATH = "data/"
 
 
 def get_ffme_returns(data_path=DATA_PATH):

@@ -14,7 +14,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 from setuptools import setup, find_packages
 setup(
     name='pfriskmgmt',
-    version='0.1.1',
+    version='0.1.2',
     author='Casokaks',
     author_email='casokaks@gmail.com',
     description='Financial portfolio risk management framework.',
